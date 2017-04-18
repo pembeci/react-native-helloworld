@@ -38,3 +38,8 @@ react-native run-android
         MyModule.alert('Hello World');
     };
     ```
+    
+## Blog
+[React Native Bridging Modules for Android from Scratch on Windows][1]
+
+[1]:http://www.codepool.biz/react-native-bridging-modules-android.html

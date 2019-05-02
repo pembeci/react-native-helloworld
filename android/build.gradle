@@ -12,6 +12,15 @@ android {
     }
 }
 
+repositories {
+    // needed for using sdk-native from countly maven repo
+    maven {
+        url 'https://dl.bintray.com/countly/maven'
+    }
+    jcenter()
+}
+
 dependencies {
-    compile "com.facebook.react:react-native:+" 
+    compile "com.facebook.react:react-native:+"
+    implementation 'ly.count.android:sdk-native:0.6'
 }

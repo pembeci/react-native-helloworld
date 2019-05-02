@@ -8,10 +8,13 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
+import ly.count.android.sdknative.CountlyNative;
+
 public class MyModule extends ReactContextBaseJavaModule {
 
   public MyModule(ReactApplicationContext reactContext) {
     super(reactContext);
+    CountlyNative.initNative(getReactApplicationContext());
   }
 
   @Override
